@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<title>Track</title>
+</head>
+<body data-title="nav.track">
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><span id="logo"></span><span><span data-i="app.name"></span><small data-i="app.tag"></small></span></a>
+  <nav aria-label="Main"><a href="/track.html" aria-current="page" data-i="nav.track"></a><a href="/dispatch.html" data-i="nav.dispatch"></a><a href="/driver.html" data-i="nav.driver"></a></nav>
+  <span class="sp"></span><button class="btn ghost sm" id="langBtn" type="button">العربية</button>
+</div></header>
+<main class="tr-wrap">
+  <h1 style="margin-bottom:6px" data-i="track.title"></h1>
+  <p class="mute" style="margin-top:0" data-i="track.sub"></p>
+  <form class="card pad" id="form" novalidate>
+    <label for="code" data-i="track.codeLabel"></label>
+    <div class="row"><input id="code" class="mono" style="flex:1;min-width:180px" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="14" data-ph="track.placeholder" aria-describedby="err"><button class="btn amber" type="submit" data-i="track.go"></button></div>
+    <div class="err" id="err" role="alert"></div>
+  </form>
+  <div id="result" aria-live="polite"></div>
+</main>
+<script type="module" src="/track.js"></script>
+</body>
+</html>

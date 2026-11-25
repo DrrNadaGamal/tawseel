@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<title>Dispatch</title>
+</head>
+<body data-title="nav.dispatch">
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><span id="logo"></span><span><span data-i="app.name"></span><small data-i="app.tag"></small></span></a>
+  <nav aria-label="Main"><a href="/track.html" data-i="nav.track"></a><a href="/dispatch.html" aria-current="page" data-i="nav.dispatch"></a><a href="/driver.html" data-i="nav.driver"></a></nav>
+  <span class="sp"></span>
+  <span class="pill role" id="rolePill" hidden></span>
+  <button class="btn ghost sm" id="logout" type="button" hidden data-i="auth.logout"></button>
+  <button class="btn ghost sm" id="langBtn" type="button">العربية</button>
+</div></header>
+<main class="wrap" id="app"></main>
+<script type="module" src="/dispatch.js"></script>
+</body>
+</html>

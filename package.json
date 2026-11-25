@@ -1,0 +1,19 @@
+{
+  "name": "tawseel",
+  "version": "1.0.0",
+  "description": "Tawseel: delivery dispatch and tracking system (Arabic/English)",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "e2e": "node e2e/run.mjs",
+    "dev": "node server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/blob": "^2.9.0",
+    "puppeteer-core": "^25.18.1",
+    "vercel": "^66.6.0"
+  }
+}

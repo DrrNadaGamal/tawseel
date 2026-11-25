@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<title>Tawseel</title>
+</head>
+<body data-title="app.name">
+<header class="top"><div class="wrap">
+  <a class="brand" href="/" id="brand"><span id="logo"></span><span><span data-i="app.name"></span><small data-i="app.tag"></small></span></a>
+  <nav aria-label="Main">
+    <a href="/track.html" data-i="nav.track"></a>
+    <a href="/dispatch.html" data-i="nav.dispatch"></a>
+    <a href="/driver.html" data-i="nav.driver"></a>
+  </nav>
+  <span class="sp"></span>
+  <button class="btn ghost sm" id="langBtn" type="button">العربية</button>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <h1><span data-i="home.h1a"></span> <em data-i="home.h1b"></em></h1>
+    <p data-i="home.sub"></p>
+    <form class="trackbox" id="trackForm" novalidate>
+      <label class="sr" for="code" data-i="track.codeLabel"></label>
+      <input id="code" class="mono" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="14" data-ph="track.placeholder" aria-describedby="codeErr">
+      <button class="btn amber" type="submit" data-i="track.go"></button>
+    </form>
+    <div class="err" id="codeErr" role="alert"></div>
+    <div class="demo-codes" id="demoCodes"></div>
+  </div>
+  <svg class="art" viewBox="0 0 480 340" role="img" aria-label="Delivery route map">
+    <rect x="10" y="10" width="460" height="320" rx="26" fill="#1e293b" stroke="#334155"/>
+    <g stroke="#334155" stroke-width="2"><path d="M40 90h400M40 170h400M40 250h400M120 30v280M220 30v280M330 30v280M410 30v280"/></g>
+    <g fill="#0f172a" opacity=".7"><rect x="132" y="102" width="76" height="56" rx="8"/><rect x="232" y="102" width="86" height="56" rx="8"/><rect x="132" y="182" width="76" height="56" rx="8"/><rect x="342" y="182" width="56" height="56" rx="8"/><rect x="52" y="182" width="56" height="56" rx="8"/></g>
+    <path d="M70 250 L120 250 L120 170 L220 170 L220 90 L330 90 L330 170 L410 170" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 14"/>
+    <path d="M70 250 L120 250 L120 170 L220 170 L220 90" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="70" cy="250" r="12" fill="#0d9488" stroke="#fff" stroke-width="3"/>
+    <g transform="translate(410 150)"><path d="M0 22c-9-10-14-17-14-24a14 14 0 0 1 28 0c0 7-5 14-14 24z" fill="#ef4444" stroke="#fff" stroke-width="3"/><circle cy="-2" r="5" fill="#fff"/></g>
+    <g transform="translate(220 90)"><circle r="17" fill="#f59e0b" stroke="#fff" stroke-width="3"/><path d="M-8 4h10l3-7h3" fill="none" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="-5" cy="6" r="2" fill="#0f172a"/><circle cx="6" cy="6" r="2" fill="#0f172a"/></g>
+  </svg>
+</div></section>
+
+<main class="wrap">
+  <div class="roles">
+    <a class="card role-card" href="/track.html" style="text-decoration:none"><div class="ic"></div><h3 data-i="home.r1t"></h3><div class="mute" data-i="home.r1d"></div><span class="btn ghost sm" data-i="home.r1b"></span></a>
+    <a class="card role-card" href="/dispatch.html" style="text-decoration:none"><div class="ic"></div><h3 data-i="home.r2t"></h3><div class="mute" data-i="home.r2d"></div><span class="btn ghost sm" data-i="home.r2b"></span></a>
+    <a class="card role-card" href="/driver.html" style="text-decoration:none"><div class="ic"></div><h3 data-i="home.r3t"></h3><div class="mute" data-i="home.r3d"></div><span class="btn ghost sm" data-i="home.r3b"></span></a>
+  </div>
+  <section class="feat">
+    <div class="card"><h3 data-i="home.f1t"></h3><p data-i="home.f1d"></p></div>
+    <div class="card"><h3 data-i="home.f2t"></h3><p data-i="home.f2d"></p></div>
+    <div class="card"><h3 data-i="home.f3t"></h3><p data-i="home.f3d"></p></div>
+    <div class="card"><h3 data-i="home.f4t"></h3><p data-i="home.f4d"></p></div>
+    <div class="card"><h3 data-i="home.f5t"></h3><p data-i="home.f5d"></p></div>
+    <div class="card"><h3 data-i="home.f6t"></h3><p data-i="home.f6d"></p></div>
+  </section>
+  <p class="foot" data-i="home.foot"></p>
+</main>
+<script type="module" src="/index.js"></script>
+</body>
+</html>
